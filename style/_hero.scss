@@ -1,0 +1,35 @@
+.hero {
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("/src/images/header-img.jpg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	color: $clr-neutral-100;
+}
+
+.hero-section {
+	padding-inline: 2rem;
+	padding-block: 13.75rem;
+}
+
+.hero-subtitle {
+	margin-bottom: 0.625rem;
+	font-size: $fs-8;
+	font-weight: $fw-bold;
+}
+
+.hero-description {
+	margin-bottom: 1.875rem;
+	font-size: $fs-5;
+	line-height: 1.5;
+}
+
+.hero-explore {
+	display: inline-block;
+	background-color: $clr-neutral-100;
+	font-size: $fs-8;
+	font-weight: $fw-bold;
+	color: $clr-primary-700;
+	padding: 1.125rem 1.5rem;
+}

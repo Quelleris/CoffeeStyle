@@ -1,0 +1,31 @@
+.feature .grid-grid {
+	gap: 20px;
+}
+
+.product-card {
+	width: 100%;
+	text-align: center;
+}
+
+.product-card .card-banner {
+	position: relative;
+}
+
+.card-action-list {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.filter-btn-wrapper {
+	gap: 1rem;
+	margin-bottom: 3rem;
+}
+
+.filter-btn {
+	border: 1px solid var(--clr-secondary-400);
+	font-size: var(--fs-8);
+	color: var(--clr-secondary-400);
+	font-weight: var(--fw-bold);
+	padding: 0.5rem;
+}
