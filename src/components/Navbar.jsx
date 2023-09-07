@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	const [navOpen, setNavOpen] = useState(false);
@@ -6,13 +7,14 @@ export default function Navbar() {
 	return (
 		<header className='header'>
 			<div className='container flex flex-jc-sb flex-ai-c'>
-				<a href='#' className='header__logo'>
+				<Link to='/' className='header__logo'>
 					<img
 						src='src/images/logo.png'
 						alt='Coffeestyle'
 						width='120'
 					/>
-				</a>
+				</Link>
+
 				<nav className='navbar'>
 					<ul
 						className={`navbar__list flex flex-ai-c uppercase ${
@@ -20,29 +22,29 @@ export default function Navbar() {
 						}`}
 					>
 						<li className='navbar__item'>
-							<a href='#home' className='navbar__link'>
+							<Link to='/' className='navbar__link'>
 								Home
-							</a>
+							</Link>
 						</li>
 						<li className='navbar__item'>
-							<a href='#about' className='navbar__link'>
+							<Link to='/about' className='navbar__link'>
 								About
-							</a>
+							</Link>
 						</li>
 						<li className='navbar__item'>
-							<a href='#product' className='navbar__link'>
-								Our products
-							</a>
+							<Link to='/products' className='navbar__link'>
+								Our Products
+							</Link>
 						</li>
 						<li className='navbar__item'>
-							<a href='#blog' className='navbar__link'>
+							<Link to='/blog' className='navbar__link'>
 								Blog
-							</a>
+							</Link>
 						</li>
 						<li className='navbar__item'>
-							<a href='#contact' className='navbar__link'>
+							<Link to='/contact' className='navbar__link'>
 								Contact
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</nav>
