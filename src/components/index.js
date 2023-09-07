@@ -1,6 +1,5 @@
 export { default as Navbar } from "./Navbar";
 export { default as Hero } from "./Hero";
-export { default as Layout } from "./Layout";
 export { default as Newsletter } from "./Newsletter";
 export { default as Product } from "./Product";
 export { default as Home } from "./sites/Home";
