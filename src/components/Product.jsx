@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Product({ product }) {
 	return (
 		<div className='product-card'>
-			<a href='#' className='card-banner img-holder'>
+			<Link
+				to={`/products/${product.id}`}
+				className='card-banner img-holder'
+			>
 				<img
 					src={product.image}
 					alt={product.alt}
@@ -36,7 +40,7 @@ export default function Product({ product }) {
 						</button>
 					</li>
 				</ul>
-			</a>
+			</Link>
 
 			<div className='card-content'>
 				<h3>
