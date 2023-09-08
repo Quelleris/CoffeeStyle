@@ -1,5 +1,5 @@
 import React from "react";
-import products from "../data.json";
+import { PRODUCTS } from "/src/data.js";
 import Product from "./Product";
 
 export default function ProductList() {
@@ -7,7 +7,7 @@ export default function ProductList() {
 		<section className='product section' id='product' aria-label='product'>
 			<div className='container'>
 				<ul className='grid-list product-list' data-filter='all'>
-					{products.map((product) => {
+					{PRODUCTS.map((product) => {
 						return (
 							<li key={product.id} className='product-list-item'>
 								<Product product={product} />
