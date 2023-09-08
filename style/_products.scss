@@ -3,18 +3,58 @@
 }
 
 .product-card {
-	width: 100%;
 	text-align: center;
 }
 
 .product-card .card-banner {
 	position: relative;
+	margin-bottom: 30px;
+}
+
+.card-title {
+	margin-bottom: 5px;
+}
+
+.product-card .card-banner::before {
+	content: "";
+	position: absolute;
+	background-color: hsl(0, 0%, 0%, 0.1);
+	inset: 0;
+	opacity: 0;
+	transition: opacity $transition-1;
+}
+
+.product-card .card-banner:is(:hover, :focus-within)::before,
+.product-card .card-banner:is(:hover, :focus-within) .card-action-list {
+	opacity: 1;
 }
 
 .card-action-list {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	gap: 0.5rem;
+	opacity: 0;
+	transition: opacity $transition-1;
+}
+
+.card-action-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $clr-neutral-100;
+	border-radius: 100vh;
+	padding: 1rem;
+}
+
+.card-action-btn ion-icon {
+	font-size: 1.45rem;
+}
+
+.card-action-btn:hover {
+	color: $clr-secondary-400;
 }
 
 .filter-btn-wrapper {
