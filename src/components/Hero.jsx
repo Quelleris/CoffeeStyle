@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
 	return (
@@ -12,9 +13,9 @@ export default function Hero() {
 					The most versatile furniture system ever created. Designed
 					to fit your life, made to move and grow.
 				</p>
-				<a href='#' className='hero-explore uppercase'>
+				<Link to='/products' className='hero-explore uppercase'>
 					Explore our products
-				</a>
+				</Link>
 			</div>
 		</section>
 	);
