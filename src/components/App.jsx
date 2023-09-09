@@ -7,6 +7,7 @@ import {
 	Products,
 	Blog,
 	Contact,
+	ProductDetails,
 } from "../components";
 
 export default function App() {
@@ -17,6 +18,10 @@ export default function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/products' element={<Products />} />
+				<Route
+					path='/products/:productId'
+					element={<ProductDetails />}
+				/>
 				<Route path='/blog' element={<Blog />} />
 				<Route path='/contact' element={<Contact />} />
 			</Routes>
