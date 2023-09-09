@@ -30,12 +30,6 @@ li {
 	list-style: none;
 }
 
-// img:not(.logo img) {
-// 	display: block;
-// 	width: 100%;
-// 	height: auto;
-// }
-
 img {
 	display: block;
 	height: auto;
@@ -199,6 +193,32 @@ a {
 
 .blog .grid-list {
 	gap: 20px;
+}
+
+.details {
+	text-align: center;
+
+	&__image {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	&__title {
+		font-size: $fs-2;
+		margin-bottom: 1rem;
+	}
+
+	&__description {
+		font-size: $fs-5;
+		text-wrap: balance;
+		margin-bottom: 30px;
+	}
+
+	&__price {
+		font-size: $fs-3;
+		color: $clr-primary-700;
+		margin-bottom: 30px;
+	}
 }
 
 @media (min-width: 54em) {
