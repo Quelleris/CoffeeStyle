@@ -5,12 +5,16 @@ export default function Newsletter() {
 		<section className='subscribe section'>
 			<div className='container'>
 				<p className='section-title uppercase'>
-					Sign up and get free coffee bags
+					Sign up to our newsletter
 				</p>
-				<h2 className='clr-neutral-100'>Coffee updates</h2>
-				<div className='flex flex-jc-c wrapper'>
-					<input type='text' />
-					<button className='clr-neutral-100 uppercase'>
+				<h2 className='clr-neutral-100'>Coffee Updates</h2>
+				<div className='input-wrapper'>
+					<input
+						type='text'
+						className='subscribe-input uppercase'
+						placeholder='customer@coffestyle.io'
+					/>
+					<button className='btn primary-btn uppercase'>
 						Subscribe
 					</button>
 				</div>
