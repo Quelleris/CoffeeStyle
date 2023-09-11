@@ -11,7 +11,7 @@ export default function Navbar() {
 					<img
 						src='src/images/logo.png'
 						alt='Coffeestyle'
-						width='102'
+						width='120'
 					/>
 				</Link>
 
