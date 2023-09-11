@@ -13,7 +13,7 @@ export default function Hero() {
 					The most versatile furniture system ever created. Designed
 					to fit your life, made to move and grow.
 				</p>
-				<Link to='/products' className='hero-explore uppercase'>
+				<Link to='/products' className=' btn primary-btn uppercase'>
 					Explore our products
 				</Link>
 			</div>
