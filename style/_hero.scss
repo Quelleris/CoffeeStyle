@@ -25,11 +25,19 @@
 	line-height: 1.5;
 }
 
-.hero-explore {
+.btn {
 	display: inline-block;
-	background-color: $clr-neutral-100;
 	font-size: $fs-8;
 	font-weight: $fw-bold;
-	color: $clr-primary-700;
 	padding: 1.125rem 1.5rem;
+	transition: $transition-1;
+}
+
+.btn:is(:hover, :focus) {
+	color: $clr-secondary-400;
+}
+
+.primary-btn {
+	background-color: $clr-neutral-100;
+	color: $clr-primary-700;
 }
