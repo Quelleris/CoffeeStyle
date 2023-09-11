@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, ProductList, Footer, Newsletter } from "../index.js";
+import { Hero, ProductList, Newsletter } from "../index.js";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -32,19 +32,23 @@ export default function Home() {
 					</div>
 				</section>
 				<ProductList />
+				<div className='section idk-img'></div>
 				<section className='blog section' id='blog' aria-label='blog'>
 					<div className='container'>
-						<div className='title-wrapper flex flex-jc-sb'>
+						<div className='title-wrapper flex flex-jc-sb flex-ai-c'>
 							<h2 className='h2 section-title'>
 								Explore our blog
 							</h2>
-							<a href='#' className='btn-link'>
+							<Link
+								to='/blog'
+								className='btn-link flex flex-ai-c'
+							>
 								<span>View All</span>
 								<ion-icon
 									name='arrow-forward'
 									aria-hidden='true'
 								></ion-icon>
-							</a>
+							</Link>
 						</div>
 
 						<ul className='grid-list'>
@@ -59,31 +63,26 @@ export default function Home() {
 											alt="Why do I get a headache when I haven't had my coffee?"
 											className='img-cover'
 										/>
-
-										<a href='#' className='card-btn'>
-											<span>Read more</span>
-											<ion-icon
-												name='add-ouline'
-												aria-hidden='true'
-											></ion-icon>
-										</a>
 									</div>
 
 									<div className='card-content'>
-										<h3>
+										<h3 className='blog-title'>
 											<a href='#' className='card-title'>
 												Why do I get a headache when I
 												haven't had my coffee?
 											</a>
 										</h3>
-										<p>
+										<p className='blog-description'>
 											Lorem, ipsum dolor sit amet
 											consectetur adipisicing elit.
 											Laborum voluptates quisquam
 											explicabo voluptas dolorem quibusdam
 											assumenda excepturi.
 										</p>
-										<time datetime='2022-12-18'>
+										<time
+											datetime='2022-12-18'
+											className='blog-date uppercase'
+										>
 											December 18, 2022
 										</time>
 									</div>
@@ -94,38 +93,33 @@ export default function Home() {
 								<div className='blog-card'>
 									<div className='card-banner img-holder'>
 										<img
-											src='src/images/.blog-2.jpg'
+											src='src/images/blog-2.jpg'
 											width='374'
 											height='243'
 											loading='lazy'
 											alt='How long does a cup of coffee keep you awake?'
 											className='img-cover'
 										/>
-
-										<a href='#' className='card-btn'>
-											<span>Read more</span>
-											<ion-icon
-												name='add-ouline'
-												aria-hidden='true'
-											></ion-icon>
-										</a>
 									</div>
 
 									<div className='card-content'>
-										<h3>
+										<h3 className='blog-title'>
 											<a href='#' className='card-title'>
 												How long does a cup of coffee
 												keep you awake?
 											</a>
 										</h3>
-										<p>
+										<p className='blog-description'>
 											Lorem, ipsum dolor sit amet
 											consectetur adipisicing elit.
 											Laborum voluptates quisquam
 											explicabo voluptas dolorem quibusdam
 											assumenda excepturi.
 										</p>
-										<time datetime='2022-12-18'>
+										<time
+											datetime='2022-12-18'
+											className='blog-date uppercase'
+										>
 											December 18, 2022
 										</time>
 									</div>
@@ -143,32 +137,27 @@ export default function Home() {
 											alt='Research suggests that heavy coffee drinkers may reap health benefits'
 											className='img-cover'
 										/>
-
-										<a href='#' className='card-btn'>
-											<span>Read more</span>
-											<ion-icon
-												name='add-ouline'
-												aria-hidden='true'
-											></ion-icon>
-										</a>
 									</div>
 
 									<div className='card-content'>
-										<h3>
+										<h3 className='blog-title'>
 											<a href='#' className='card-title'>
 												Research suggests that heavy
 												coffee drinkers may reap health
 												benefits
 											</a>
 										</h3>
-										<p>
+										<p className='blog-description'>
 											Lorem, ipsum dolor sit amet
 											consectetur adipisicing elit.
 											Laborum voluptates quisquam
 											explicabo voluptas dolorem quibusdam
 											assumenda excepturi.
 										</p>
-										<time datetime='2022-12-18'>
+										<time
+											datetime='2022-12-18'
+											className='blog-date uppercase'
+										>
 											December 18, 2022
 										</time>
 									</div>
