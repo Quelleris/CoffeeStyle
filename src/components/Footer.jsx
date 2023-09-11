@@ -5,101 +5,88 @@ export default function Footer() {
 		<footer className='footer'>
 			<div className='container'>
 				<div className='grid-list section'>
-					<ul className='footer-list'>
-						<li>
+					<ul className='footer__list'>
+						<li className='footer__list__item'>
 							<a href='#' className='logo'>
 								<img
 									src='src/images/logo.png'
 									alt='Coffeestyle'
-									width='102'
+									width='120'
 								/>
 							</a>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
-								Help & Contact Us
-							</a>
-						</li>
-						<li>
-							<a href='#' className='footer-link'>
-								Returns & Refunds
-							</a>
-						</li>
-						<li>
-							<a href='#' className='footer-link'>
-								Online Stores
-							</a>
-						</li>
-						<li>
-							<a href='#' className='footer-link'>
-								Terms & Conditions
-							</a>
+
+						<li className='footer__list__item'>
+							<p className='footer__desc'>
+								Delivering the best coffee life since 1996. From
+								coffee geeks to the real ones.
+							</p>
 						</li>
 					</ul>
 
-					<ul className='footer-list'>
-						<li>
-							<p className='footer-list-title'>
+					<ul className='footer__list'>
+						<li className='footer__list__item'>
+							<p className='footer__list__title'>
 								Help & Information
 							</p>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								Help & Contact Us
 							</a>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								Returns & Refunds
 							</a>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								Online Stores
 							</a>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								Terms & Conditions
 							</a>
 						</li>
 					</ul>
 
-					<ul className='footer-list'>
-						<li>
-							<p className='footer-list-title'>Follow Us</p>
+					<ul className='footer__list'>
+						<li className='footer__list__item'>
+							<p className='footer__list__title'>Follow Us</p>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								Facebook
 							</a>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								Instagram
 							</a>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								Pinterest
 							</a>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								Twitter
 							</a>
 						</li>
 					</ul>
 
-					<ul className='footer-list'>
-						<li>
-							<p className='footer-list-title'>Contact Us</p>
+					<ul className='footer__list'>
+						<li className='footer__list__item'>
+							<p className='footer__list__title'>Contact Us</p>
 						</li>
-						<li>
+						<li className='footer__list__item'>
 							<p>We're always happy to help</p>
 						</li>
-						<li>
-							<a href='#' className='footer-link'>
+						<li className='footer__list__item'>
+							<a href='#' className='footer__link'>
 								us@coffeestyle.io
 							</a>
 						</li>
