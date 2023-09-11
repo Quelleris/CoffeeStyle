@@ -30,6 +30,13 @@ li {
 	list-style: none;
 }
 
+input {
+	border: none;
+	background: none;
+	font: inherit;
+	outline: transparent;
+}
+
 img {
 	display: block;
 	height: auto;
@@ -90,7 +97,7 @@ a {
 
 .section-title {
 	text-align: center;
-	margin-bottom: 2rem;
+	// margin-bottom: 2rem;
 }
 
 .flex {
@@ -156,7 +163,7 @@ a {
 }
 
 .about-description {
-	margin-bottom: 0.9375rem;
+	margin-bottom: 24px;
 	line-height: 1.6;
 	text-wrap: balance;
 }
@@ -165,11 +172,12 @@ a {
 	color: $clr-secondary-400;
 	border-bottom: 1px solid $clr-secondary-400;
 	width: fit-content;
+	margin: auto;
 }
 
 .idk-img {
 	height: 350px;
-	background-image: url("https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7ac1c6ecdfd2_Section%20Image%202.jpg");
+	background-image: url("src/images/section-image.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -177,7 +185,7 @@ a {
 }
 
 .subscribe .container {
-	padding: 80px 100px;
+	padding: 80px 2rem;
 }
 
 .subscribe {
@@ -185,15 +193,11 @@ a {
 	text-align: center;
 }
 
-.subscribe .wrapper {
+.input-wrapper {
 	gap: 10px;
 }
 
 /* BLOG */
-
-.blog .grid-list {
-	gap: 20px;
-}
 
 .details {
 	text-align: center;
@@ -221,6 +225,91 @@ a {
 	}
 }
 
+.secondary-btn {
+	background-color: $clr-primary-700;
+	color: $clr-neutral-100;
+}
+
+.details .flex-gap {
+	gap: 2rem;
+}
+
+.product .grid-list {
+	gap: 2.25rem 1.25rem;
+}
+
+.title-wrapper {
+	margin-bottom: 2rem;
+}
+
+.blog {
+	text-align: center;
+}
+
+.blog .section-title {
+	margin: unset;
+}
+
+.btn-link:is(:hover, :focus) {
+	color: $clr-secondary-400;
+}
+
+.blog-card .card-banner {
+	margin-bottom: 1.5rem;
+}
+
+.blog-title {
+	line-height: 1.5;
+	margin-bottom: 10px;
+	transition: $transition-1;
+}
+
+.blog-title:is(:hover, :focus) {
+	color: $clr-secondary-400;
+}
+
+.blog .grid-list {
+	gap: 2.25rem;
+}
+
+.card-title {
+	font-size: $fs-4;
+}
+
+.blog-date {
+	font-size: $fs-8;
+	color: $clr-neutral-300;
+}
+
+.blog-description {
+	margin-bottom: 1rem;
+}
+.subscribe-input {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 1rem;
+	background-color: $clr-primary-700;
+	border: 1px solid $clr-neutral-300;
+	padding: 18px 24px;
+	color: $clr-neutral-100;
+	font-size: $fs-7;
+}
+
+.subscribe h2 {
+	font-size: $fs-2;
+}
+
+.subscribe .section-title {
+	color: $clr-neutral-300;
+	font-size: $fs-8;
+	margin-bottom: 1rem;
+	font-weight: $fw-bold;
+}
+
+.subscribe .primary-btn {
+	width: 100%;
+}
+
 @media (min-width: 54em) {
 	.container {
 		max-width: 1200px;
@@ -230,7 +319,6 @@ a {
 
 	.product .grid-list {
 		grid-template-columns: repeat(3, 1fr);
-		gap: 2.1875rem 1.25rem;
 	}
 
 	.blog .grid-list {
@@ -239,5 +327,23 @@ a {
 
 	.footer .grid-list {
 		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.subscribe .container {
+		padding-inline: 250px;
+	}
+
+	.subscribe .primary-btn {
+		width: fit-content;
+	}
+
+	.subscribe .input-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.subscribe-input {
+		margin: unset;
 	}
 }
