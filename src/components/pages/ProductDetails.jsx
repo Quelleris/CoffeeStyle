@@ -25,12 +25,12 @@ export default function ProductDetails() {
 							<p className='details__price'>
 								$ {product.price}.00 USD
 							</p>
-							<div className='flex'>
+							<div className='flex flex-jc-c flex-ai-c flex-gap'>
 								<input
 									type='number'
 									className='details__input'
 								/>
-								<button className='secondary-btn uppercase'>
+								<button className='btn secondary-btn uppercase'>
 									Add to card
 								</button>
 							</div>
