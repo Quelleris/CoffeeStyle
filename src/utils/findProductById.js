@@ -1,4 +1,4 @@
-import { PRODUCTS } from "/src/data.js";
+import { PRODUCTS } from "/src/data/data.js";
 
 export const findProductById = (id) => {
 	const key = Object.keys(PRODUCTS).find(

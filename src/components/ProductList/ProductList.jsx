@@ -1,6 +1,6 @@
 import React from "react";
-import { PRODUCTS } from "/src/data.js";
-import Product from "./Product";
+import { PRODUCTS } from "/src/data/data.js";
+import Product from "../Product/Product";
 
 export default function ProductList() {
 	return (

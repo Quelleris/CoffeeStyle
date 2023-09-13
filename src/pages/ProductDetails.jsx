@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { findProductById } from "../../utils/findProductById";
+import { findProductById } from "../utils/findProductById";
 
 export default function ProductDetails() {
 	const { productId } = useParams();
