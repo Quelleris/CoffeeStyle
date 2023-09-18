@@ -8,6 +8,7 @@ import {
 	Blog,
 	Contact,
 	ProductDetails,
+	Newsletter,
 } from "../components";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
 				<Route path='/blog' element={<Blog />} />
 				<Route path='/contact' element={<Contact />} />
 			</Routes>
+			<Newsletter />
 			<Footer />
 		</>
 	);
