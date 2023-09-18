@@ -16,4 +16,32 @@
 	&__list__item:not(:last-child) {
 		margin-bottom: 0.25rem;
 	}
+
+	&__link {
+		transition: $transition-1;
+	}
+
+	&__link:is(:hover, :focus) {
+		color: $clr-secondary-400;
+	}
+}
+
+@media (min-width: 54em) {
+	.footer {
+		& .grid-list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media (min-width: 75em) {
+	.footer {
+		& .grid-list {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		&__desc {
+			text-align: left;
+		}
+	}
 }
