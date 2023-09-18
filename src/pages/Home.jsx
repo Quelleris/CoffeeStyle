@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, ProductList, Newsletter } from "../components/index";
+import { Hero, ProductList } from "../components/index";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -151,7 +151,6 @@ export default function Home() {
 					</ul>
 				</div>
 			</section>
-			<Newsletter />
 		</main>
 	);
 }
