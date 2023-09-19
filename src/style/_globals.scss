@@ -97,7 +97,7 @@ a {
 
 .section-title {
 	text-align: center;
-	// margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .flex {
@@ -219,9 +219,13 @@ a {
 	}
 
 	&__price {
-		font-size: $fs-3;
-		color: $clr-primary-700;
+		font-size: $fs-2;
+		color: $clr-secondary-400;
 		margin-bottom: 30px;
+	}
+
+	&__input {
+		background-color: $clr-neutral-300;
 	}
 }
 
@@ -325,12 +329,8 @@ a {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.footer .grid-list {
-		grid-template-columns: repeat(4, 1fr);
-	}
-
 	.subscribe .container {
-		padding-inline: 250px;
+		padding-inline: 350px;
 	}
 
 	.subscribe .primary-btn {
@@ -345,5 +345,12 @@ a {
 
 	.subscribe-input {
 		margin: unset;
+	}
+
+	.details__wrapper {
+		display: flex;
+		gap: 5rem;
+		align-items: center;
+		text-align: left;
 	}
 }
