@@ -23,9 +23,9 @@ export default function ProductDetails() {
 								{product.details}
 							</p>
 							<p className='details__price'>
-								$ {product.price}.00 USD
+								$ {product.price}.00
 							</p>
-							<div className='flex flex-jc-c flex-ai-c flex-gap'>
+							<div className='input-wrapper flex flex-ai-c flex-gap'>
 								<input
 									type='number'
 									className='details__input'
