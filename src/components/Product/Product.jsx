@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../context/cartContext";
 
 export default function Product({ product }) {
+	const { addItemToCart } = useContext(CartContext);
+
 	return (
 		<div className='product-card'>
-			<Link
-				to={`/products/${product.id}`}
-				className='card-banner img-holder'
-			>
-				<img
-					src={product.image}
-					alt={product.alt}
-					className='img-cover'
-				/>
-
+			<div className='card-wrapper'>
+				<Link
+					to={`/products/${product.id}`}
+					className='card-banner img-holder'
+				>
+					<img
+						src={product.image}
+						alt={product.alt}
+						className='img-cover'
+					/>
+				</Link>
 				<ul className='card-action-list flex'>
 					<li>
 						<button
 							className='card-action-btn'
 							aria-label='add to card'
 							title='add to card'
+							onClick={() => addItemToCart(product.id)}
 						>
 							<ion-icon
 								name='bag-outline'
@@ -40,7 +45,7 @@ export default function Product({ product }) {
 						</button>
 					</li>
 				</ul>
-			</Link>
+			</div>
 
 			<div className='card-content'>
 				<h3>
@@ -56,9 +61,6 @@ export default function Product({ product }) {
 					>
 						$ {product.price} USD
 					</data>
-					{/* <span className='price clr-neutral-300 line-through'>
-						$ 99.00 USD
-					</span> */}
 				</div>
 			</div>
 		</div>

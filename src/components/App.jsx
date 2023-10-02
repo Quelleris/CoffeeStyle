@@ -10,24 +10,27 @@ import {
 	ProductDetails,
 	Newsletter,
 } from "../components";
+import { CartContextProvider } from "../context/cartContext";
 
 export default function App() {
 	return (
 		<>
-			<Navbar />
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/about' element={<About />} />
-				<Route path='/products' element={<Products />} />
-				<Route
-					path='/products/:productId'
-					element={<ProductDetails />}
-				/>
-				<Route path='/blog' element={<Blog />} />
-				<Route path='/contact' element={<Contact />} />
-			</Routes>
-			<Newsletter />
-			<Footer />
+			<CartContextProvider>
+				<Navbar />
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/products' element={<Products />} />
+					<Route
+						path='/products/:productId'
+						element={<ProductDetails />}
+					/>
+					<Route path='/blog' element={<Blog />} />
+					<Route path='/contact' element={<Contact />} />
+				</Routes>
+				<Newsletter />
+				<Footer />
+			</CartContextProvider>
 		</>
 	);
 }
