@@ -11,6 +11,10 @@
 	margin-bottom: 30px;
 }
 
+.card-wrapper {
+	position: relative;
+}
+
 .card-title {
 	margin-bottom: 5px;
 }
@@ -24,8 +28,8 @@
 	transition: opacity $transition-1;
 }
 
-.product-card .card-banner:is(:hover, :focus-within)::before,
-.product-card .card-banner:is(:hover, :focus-within) .card-action-list {
+.card-wrapper:is(:hover, :focus-within) .card-banner::before,
+.card-wrapper:is(:hover, :focus-within) .card-action-list {
 	opacity: 1;
 }
 
