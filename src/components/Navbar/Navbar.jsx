@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../context/cartContext";
 
 export default function Navbar() {
+	const { cartItems } = useContext(CartContext);
+
 	const [navOpen, setNavOpen] = useState(false);
+	const [cartOpen, setCartOpen] = useState(false);
+	const [wishListOpen, setWhishListOpen] = useState(false);
 
 	return (
 		<header className='header'>
@@ -12,6 +17,7 @@ export default function Navbar() {
 						src='src/images/logo.png'
 						alt='Coffeestyle'
 						width='120'
+						height='26'
 					/>
 				</Link>
 
@@ -53,10 +59,14 @@ export default function Navbar() {
 						<ion-icon
 							name='bag-outline'
 							aria-hidden='true'
+							onClick={() => setCartOpen(true)}
 						></ion-icon>
 						<span className='btn-badge'>0</span>
 					</button>
-					<button className='header__action__btn'>
+					<button
+						className='header__action__btn'
+						aria-label='wishlist'
+					>
 						<ion-icon
 							name='heart-outline'
 							aria-hidden='true'
@@ -68,6 +78,18 @@ export default function Navbar() {
 						aria-label='menu'
 						onClick={() => setNavOpen(!navOpen)}
 					></button>
+				</div>
+				<div className={`cart ${cartOpen ? "active" : ""}`}>
+					<div className='cart__header flex flex-jc-sb flex-ai-c'>
+						<p className='uppercase clr-neutral-100'>Your Cart</p>
+						<button
+							className='close-cart-btn'
+							aria-label='close cart'
+							onClick={() => {
+								setCartOpen(false);
+							}}
+						></button>
+					</div>
 				</div>
 			</div>
 		</header>
