@@ -15,13 +15,13 @@ export function CartContextProvider(props) {
 	const [cartItems, setCartItems] = useState(() => getDefaultCart());
 
 	function addItemToCart(itemId) {
-		setCartItems((prev) => ({ prev, [itemId]: prev[itemId] + 1 }));
+		setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
 	}
 
 	function removeItemFromCart(itemId) {
-		setCartItems((prev) => ({ prev, [itemId]: prev[itemId] - 1 }));
+		setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
 	}
-	console.log(cartItems);
+
 	return (
 		<CartContext.Provider
 			value={{ cartItems, addItemToCart, removeItemFromCart }}
