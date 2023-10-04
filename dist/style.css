@@ -34,7 +34,6 @@ input {
   border: none;
   background: none;
   font: inherit;
-  outline: transparent;
 }
 
 img {
@@ -493,21 +492,45 @@ a {
   z-index: 999;
   opacity: 0;
   pointer-events: none;
-}
-.cart__header {
-  padding: 30px 40px;
-  border-bottom: 1px solid #979593;
+  overflow: auto;
+  color: #ffffff;
 }
 .cart.active {
   opacity: 1;
   pointer-events: all;
+}
+.cart__header {
+  padding: 30px 40px;
+  border-bottom: 1px solid rgba(210, 210, 213, 0.1);
+}
+.cart__list {
+  display: grid;
+  gap: 1rem;
+  margin-block-start: 1rem;
+  text-align: left;
+}
+.cart__item {
+  margin-inline: 1.25rem;
+  padding-block-end: 0.5rem;
+  border-bottom: 1px solid rgba(210, 210, 213, 0.1);
+}
+.cart__item__image {
+  width: 100px;
+  aspect-ratio: 1;
+}
+.cart__item__title {
+  color: #ffffff;
+}
+.cart__item__amount {
+  width: 60px;
+  background: white;
 }
 
 .close-cart-btn {
   display: block;
   height: 12px;
   aspect-ratio: 1;
-  background-image: url("../src/images/icon-menu.svg");
+  background-image: url("../src/images/close-button.png");
   background-repeat: no-repeat;
   background-position: center;
 }
