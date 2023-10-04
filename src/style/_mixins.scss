@@ -1,0 +1,8 @@
+@mixin toggle-button($image, $height) {
+	display: block;
+	height: $height;
+	aspect-ratio: 1;
+	background-image: $image;
+	background-repeat: no-repeat;
+	background-position: center;
+}
