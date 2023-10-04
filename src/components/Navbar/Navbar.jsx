@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/cartContext";
+import { PRODUCTS } from "../../data/data";
 
 export default function Navbar() {
 	const { cartItems } = useContext(CartContext);
@@ -89,6 +90,41 @@ export default function Navbar() {
 								setCartOpen(false);
 							}}
 						></button>
+					</div>
+					<ul className='cart__list'>
+						{PRODUCTS.map((product) => {
+							if (cartItems[product.id] !== 0) {
+								return (
+									<li key={product.id} className='cart__item'>
+										<div className='flex flex-jc-sb flex-ai-c'>
+											<img
+												src={product.image}
+												className='cart__item__image'
+												alt=''
+											/>
+											<div>
+												<h3 className='cart__item__title'>
+													{product.name}
+												</h3>
+												<p className='clr-neutral-100 cart__item__price'>
+													{product.price} USD
+												</p>
+											</div>
+											<input
+												type='number'
+												className='cart__item__amount'
+											/>
+										</div>
+									</li>
+								);
+							}
+						})}
+					</ul>
+					<div className='cart__checkout'>
+						<div className='flex flex-jc-sb flex-ai-c'>
+							<p>Total: </p>
+							<p>0 USD</p>
+						</div>
 					</div>
 				</div>
 			</div>
