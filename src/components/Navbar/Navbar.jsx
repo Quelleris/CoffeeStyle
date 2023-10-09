@@ -1,12 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../context/cartContext";
-import { PRODUCTS } from "../../data/data";
 import Cart from "../Cart/Cart";
 
 export default function Navbar() {
-	const { cartItems } = useContext(CartContext);
-
 	const [navOpen, setNavOpen] = useState(false);
 	const [cartOpen, setCartOpen] = useState(false);
 	const [wishListOpen, setWhishListOpen] = useState(false);
