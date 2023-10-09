@@ -10,7 +10,7 @@ export default function Newsletter() {
 				<h2 className='clr-neutral-100'>Coffee Updates</h2>
 				<div className='input-wrapper'>
 					<input
-						type='text'
+						type='email'
 						className='subscribe-input uppercase'
 						placeholder='customer@coffestyle.io'
 					/>
