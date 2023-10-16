@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
 	return (
-		<main>
+		<>
 			<Hero />
 			<section className='about section' id='about' aria-label='about'>
 				<div className='container'>
@@ -151,6 +151,6 @@ export default function Home() {
 					</ul>
 				</div>
 			</section>
-		</main>
+		</>
 	);
 }
